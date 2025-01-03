@@ -7367,7 +7367,7 @@ function getAlternateResinBonus(season) {
 ////////////////////////////////////////////////////////////////////////////////
 
 function getSunSeedsBoost(opt_perma) {
-  var bonus_sun = Num(6); // +150%
+  var bonus_sun = Num(15); // +150%
   bonus_sun.mulInPlace(getWeatherBoost());
   if(state.upgrades[active_choice0].count == 2 && !opt_perma) bonus_sun.mulrInPlace(1 + active_choice0_b_bonus);
   if(opt_perma) bonus_sun.mulrInPlace(challenge_stormy_mul);
