@@ -142,8 +142,8 @@ function getWeatherBoost() {
 
 ////////////////////////////////////////////////////////////////////////////////
 
-var sun_duration = 2 * 60;
-var sun_wait = 10 * 60 + sun_duration;
+var sun_duration = 10 * 60;
+var sun_wait = 10 + sun_duration;
 
 // how long the sun effect is active
 function getSunDuration() {
@@ -166,8 +166,8 @@ function sunActive() {
 
 ////////////////////////////////////////////////////////////////////////////////
 
-var mist_duration = 3 * 60;
-var mist_wait = 15 * 60 + mist_duration;
+var mist_duration = 10 * 60;
+var mist_wait = 10 + mist_duration;
 
 // how long the mist effect is active
 function getMistDuration() {
@@ -190,8 +190,8 @@ function mistActive() {
 
 ////////////////////////////////////////////////////////////////////////////////
 
-var rainbow_duration = 4 * 60;
-var rainbow_wait = 20 * 60 + rainbow_duration;
+var rainbow_duration = 10 * 60;
+var rainbow_wait = 10 + rainbow_duration;
 
 // how long the rainbow effect is active
 function getRainbowDuration() {
@@ -2033,49 +2033,49 @@ function getBeeCost(tier) {
 var berryplanttime0 = 60;
 var mushplanttime0 = 60;
 var nutplanttime0 = 60;
-var flowerplanttime0 = 90;
-var nettleplanttime0 = 15;
+var flowerplanttime0 = 60;
+var nettleplanttime0 = 10;
 
 // berries: give seeds
 crop_register_id = 25;
 var berry_0 = registerBerry('blackberry', 0, berryplanttime0 * 1, blackberry);
-var berry_1 = registerBerry('blueberry', 1, berryplanttime0 * 2, blueberry);
-var berry_2 = registerBerry('cranberry', 2, berryplanttime0 * 4, cranberry);
-var berry_3 = registerBerry('currant', 3, berryplanttime0 * 8, currant);
-var berry_4 = registerBerry('goji', 4, berryplanttime0 * 12, goji);
-var berry_5 = registerBerry('gooseberry', 5, berryplanttime0 * 16, gooseberry);
-var berry_6 = registerBerry('grape', 6, berryplanttime0 * 20, grape);
-var berry_7 = registerBerry('honeyberry', 7, berryplanttime0 * 25, honeyberry);
-var berry_8 = registerBerry('juniper', 8, berryplanttime0 * 30, juniper);
-var berry_9 = registerBerry('lingonberry', 9, berryplanttime0 * 35, lingonberry);
-var berry_10 = registerBerry('mulberry', 10, berryplanttime0 * 40, mulberry);
-var berry_11 = registerBerry('physalis', 11, berryplanttime0 * 45, physalis);
-var berry_12 = registerBerry('raspberry', 12, berryplanttime0 * 50, raspberry);
-var berry_13 = registerBerry('strawberry', 13, berryplanttime0 * 55, strawberry, 'Botanically speaking, not actually a berry!');
-var berry_14 = registerBerry('wampee', 14, berryplanttime0 * 60, images_wampee);
-var berry_15 = registerBerry('whitecurrant', 15, berryplanttime0 * 65, whitecurrant);
+var berry_1 = registerBerry('blueberry', 1, berryplanttime0 * 1, blueberry);
+var berry_2 = registerBerry('cranberry', 2, berryplanttime0 * 1, cranberry);
+var berry_3 = registerBerry('currant', 3, berryplanttime0 * 1, currant);
+var berry_4 = registerBerry('goji', 4, berryplanttime0 * 1, goji);
+var berry_5 = registerBerry('gooseberry', 5, berryplanttime0 * 1, gooseberry);
+var berry_6 = registerBerry('grape', 6, berryplanttime0 * 1, grape);
+var berry_7 = registerBerry('honeyberry', 7, berryplanttime0 * 1, honeyberry);
+var berry_8 = registerBerry('juniper', 8, berryplanttime0 * 1, juniper);
+var berry_9 = registerBerry('lingonberry', 9, berryplanttime0 * 1, lingonberry);
+var berry_10 = registerBerry('mulberry', 10, berryplanttime0 * 1, mulberry);
+var berry_11 = registerBerry('physalis', 11, berryplanttime0 * 1, physalis);
+var berry_12 = registerBerry('raspberry', 12, berryplanttime0 * 1, raspberry);
+var berry_13 = registerBerry('strawberry', 13, berryplanttime0 * 1, strawberry, 'Botanically speaking, not actually a berry!');
+var berry_14 = registerBerry('wampee', 14, berryplanttime0 * 1, images_wampee);
+var berry_15 = registerBerry('whitecurrant', 15, berryplanttime0 * 1, whitecurrant);
 
 // mushrooms: give spores
 crop_register_id = 50;
 var mush_0 = registerMushroom('champignon', 0, mushplanttime0 * 1, champignon);
-var mush_1 = registerMushroom('matsutake', 1, mushplanttime0 * 3, matsutake);
-var mush_2 = registerMushroom('morel', 2, mushplanttime0 * 6, morel);
-var mush_3 = registerMushroom('muscaria', 3, mushplanttime0 * 10, amanita, 'amanita muscaria'); // names are alphabetical, but amanita counts as "muscaria" because it's not well suited to be the lowest tier mushroom with letter a
-var mush_4 = registerMushroom('oyster mushroom', 4, mushplanttime0 * 15, images_oyster);
-var mush_5 = registerMushroom('portobello', 5, mushplanttime0 * 20, portobello);
-var mush_6 = registerMushroom('shiitake', 6, mushplanttime0 * 25, shiitake);
-var mush_7 = registerMushroom('truffle', 7, mushplanttime0 * 30, truffle);
+var mush_1 = registerMushroom('matsutake', 1, mushplanttime0 * 1, matsutake);
+var mush_2 = registerMushroom('morel', 2, mushplanttime0 * 1, morel);
+var mush_3 = registerMushroom('muscaria', 3, mushplanttime0 * 1, amanita, 'amanita muscaria'); // names are alphabetical, but amanita counts as "muscaria" because it's not well suited to be the lowest tier mushroom with letter a
+var mush_4 = registerMushroom('oyster mushroom', 4, mushplanttime0 * 1, images_oyster);
+var mush_5 = registerMushroom('portobello', 5, mushplanttime0 * 1, portobello);
+var mush_6 = registerMushroom('shiitake', 6, mushplanttime0 * 1, shiitake);
+var mush_7 = registerMushroom('truffle', 7, mushplanttime0 * 1, truffle);
 
 // flowers: give boost to neighbors
 crop_register_id = 75;
 var flower_0 = registerFlower('anemone', 0, getFlowerBoost(0), flowerplanttime0, images_anemone);
-var flower_1 = registerFlower('clover', 1, getFlowerBoost(1), flowerplanttime0 * 3, images_clover);
-var flower_2 = registerFlower('cornflower', 2, getFlowerBoost(2), flowerplanttime0 * 6, images_cornflower);
-var flower_3 = registerFlower('daisy', 3, getFlowerBoost(3), flowerplanttime0 * 9, images_daisy);
-var flower_4 = registerFlower('dandelion', 4, getFlowerBoost(4), flowerplanttime0 * 12, images_dandelion);
-var flower_5 = registerFlower('iris', 5, getFlowerBoost(5), flowerplanttime0 * 15, images_iris);
-var flower_6 = registerFlower('lavender', 6, getFlowerBoost(6), flowerplanttime0 * 18, images_lavender);
-var flower_7 = registerFlower('orchid', 7, getFlowerBoost(7), flowerplanttime0 * 21, images_orchid);
+var flower_1 = registerFlower('clover', 1, getFlowerBoost(1), flowerplanttime0 * 1, images_clover);
+var flower_2 = registerFlower('cornflower', 2, getFlowerBoost(2), flowerplanttime0 * 1, images_cornflower);
+var flower_3 = registerFlower('daisy', 3, getFlowerBoost(3), flowerplanttime0 * 1, images_daisy);
+var flower_4 = registerFlower('dandelion', 4, getFlowerBoost(4), flowerplanttime0 * 1, images_dandelion);
+var flower_5 = registerFlower('iris', 5, getFlowerBoost(5), flowerplanttime0 * 1, images_iris);
+var flower_6 = registerFlower('lavender', 6, getFlowerBoost(6), flowerplanttime0 * 1, images_lavender);
+var flower_7 = registerFlower('orchid', 7, getFlowerBoost(7), flowerplanttime0 * 1, images_orchid);
 
 
 crop_register_id = 100;
@@ -2110,21 +2110,21 @@ var squirrel_0 = registerSquirrel('squirrel', 0, Res(), /*growtime=*/0.5, images
 // nuts
 crop_register_id = 150;
 var nut_0  = registerNut('acorn', 0, nutplanttime0 * 1, images_acorn, 'it\'s a little oak tree');
-var nut_1  = registerNut('almond', 1, nutplanttime0 * 2, images_almond);
-var nut_2  = registerNut('beechnut', 2, nutplanttime0 * 3, images_beech);
-var nut_3  = registerNut('brazil nut', 3, nutplanttime0 * 4, images_brazilnut);
-var nut_4  = registerNut('cashew', 4, nutplanttime0 * 5, images_cashew);
-var nut_5  = registerNut('chestnut', 5, nutplanttime0 * 6, images_chestnut);
-var nut_6  = registerNut('coconut', 6, nutplanttime0 * 7, images_coconut);
-var nut_7  = registerNut('ginkgo nut', 7, nutplanttime0 * 8, images_ginkgo);
-var nut_8  = registerNut('hazelnut', 8, nutplanttime0 * 9, images_hazelnut);
-var nut_9  = registerNut('macadamia nut', 9, nutplanttime0 * 10, images_macademia);
-var nut_10  = registerNut('peanut', 10, nutplanttime0 * 11, images_peanut);
-var nut_11  = registerNut('pecan nut', 11, nutplanttime0 * 12, images_pecan);
-var nut_12  = registerNut('pili nut', 12, nutplanttime0 * 13, images_pili);
-var nut_13  = registerNut('pine nut', 13, nutplanttime0 * 14, images_pinenut);
-var nut_14 = registerNut('pistachio', 14, nutplanttime0 * 15, images_pistachio);
-var nut_15 = registerNut('walnut', 15, nutplanttime0 * 16, images_walnut);
+var nut_1  = registerNut('almond', 1, nutplanttime0 * 1, images_almond);
+var nut_2  = registerNut('beechnut', 2, nutplanttime0 * 1, images_beech);
+var nut_3  = registerNut('brazil nut', 3, nutplanttime0 * 1, images_brazilnut);
+var nut_4  = registerNut('cashew', 4, nutplanttime0 * 1, images_cashew);
+var nut_5  = registerNut('chestnut', 5, nutplanttime0 * 1, images_chestnut);
+var nut_6  = registerNut('coconut', 6, nutplanttime0 * 1, images_coconut);
+var nut_7  = registerNut('ginkgo nut', 7, nutplanttime0 * 1, images_ginkgo);
+var nut_8  = registerNut('hazelnut', 8, nutplanttime0 * 1, images_hazelnut);
+var nut_9  = registerNut('macadamia nut', 9, nutplanttime0 * 1, images_macademia);
+var nut_10  = registerNut('peanut', 10, nutplanttime0 * 1, images_peanut);
+var nut_11  = registerNut('pecan nut', 11, nutplanttime0 * 1, images_pecan);
+var nut_12  = registerNut('pili nut', 12, nutplanttime0 * 1, images_pili);
+var nut_13  = registerNut('pine nut', 13, nutplanttime0 * 1, images_pinenut);
+var nut_14 = registerNut('pistachio', 14, nutplanttime0 * 1, images_pistachio);
+var nut_15 = registerNut('walnut', 15, nutplanttime0 * 1, images_walnut);
 
 crop_register_id = 200;
 
@@ -7367,7 +7367,7 @@ function getAlternateResinBonus(season) {
 ////////////////////////////////////////////////////////////////////////////////
 
 function getSunSeedsBoost(opt_perma) {
-  var bonus_sun = Num(1.5); // +150%
+  var bonus_sun = Num(3); // +150%
   bonus_sun.mulInPlace(getWeatherBoost());
   if(state.upgrades[active_choice0].count == 2 && !opt_perma) bonus_sun.mulrInPlace(1 + active_choice0_b_bonus);
   if(opt_perma) bonus_sun.mulrInPlace(challenge_stormy_mul);
@@ -7376,14 +7376,14 @@ function getSunSeedsBoost(opt_perma) {
 
 // a seed consumption reduction, so a boost
 function getMistSeedsBoost() {
-  var bonus_mist0 = Num(0.75); // -25%
+  var bonus_mist0 = Num(1.5); // -25%
   // weather boost not applied to the less seeds effect, it's a multiplier intended for things that increase something plus would make it doubly-powerful
   if(state.upgrades[active_choice0].count == 2) bonus_mist0.divrInPlace(1 + active_choice0_b_bonus);
   return bonus_mist0;
 }
 
 function getMistSporesBoost(opt_perma) {
-  var bonus_mist1 = Num(1); // +100%
+  var bonus_mist1 = Num(2); // +100%
   bonus_mist1.mulInPlace(getWeatherBoost());
   if(state.upgrades[active_choice0].count == 2 && !opt_perma) bonus_mist1.mulrInPlace(1 + active_choice0_b_bonus);
   if(opt_perma) bonus_mist1.mulrInPlace(challenge_stormy_mul);
@@ -7391,7 +7391,7 @@ function getMistSporesBoost(opt_perma) {
 }
 
 function getRainbowFlowerBoost(opt_perma) {
-  var bonus_rainbow = Num(0.75); // +75%
+  var bonus_rainbow = Num(1.5); // +75%
   bonus_rainbow.mulInPlace(getWeatherBoost());
   if(state.upgrades[active_choice0].count == 2 && !opt_perma) bonus_rainbow.mulrInPlace(1 + active_choice0_b_bonus);
   if(opt_perma) bonus_rainbow.mulrInPlace(challenge_stormy_mul);
