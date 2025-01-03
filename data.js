@@ -7367,7 +7367,7 @@ function getAlternateResinBonus(season) {
 ////////////////////////////////////////////////////////////////////////////////
 
 function getSunSeedsBoost(opt_perma) {
-  var bonus_sun = Num(15); // +150%
+  var bonus_sun = Num(20); // +150%
   bonus_sun.mulInPlace(getWeatherBoost());
   if(state.upgrades[active_choice0].count == 2 && !opt_perma) bonus_sun.mulrInPlace(1 + active_choice0_b_bonus);
   if(opt_perma) bonus_sun.mulrInPlace(challenge_stormy_mul);
@@ -7376,14 +7376,14 @@ function getSunSeedsBoost(opt_perma) {
 
 // a seed consumption reduction, so a boost
 function getMistSeedsBoost() {
-  var bonus_mist0 = Num(1.5); // -25%
+  var bonus_mist0 = Num(20); // -25%
   // weather boost not applied to the less seeds effect, it's a multiplier intended for things that increase something plus would make it doubly-powerful
   if(state.upgrades[active_choice0].count == 2) bonus_mist0.divrInPlace(1 + active_choice0_b_bonus);
   return bonus_mist0;
 }
 
 function getMistSporesBoost(opt_perma) {
-  var bonus_mist1 = Num(2); // +100%
+  var bonus_mist1 = Num(20); // +100%
   bonus_mist1.mulInPlace(getWeatherBoost());
   if(state.upgrades[active_choice0].count == 2 && !opt_perma) bonus_mist1.mulrInPlace(1 + active_choice0_b_bonus);
   if(opt_perma) bonus_mist1.mulrInPlace(challenge_stormy_mul);
@@ -7391,7 +7391,7 @@ function getMistSporesBoost(opt_perma) {
 }
 
 function getRainbowFlowerBoost(opt_perma) {
-  var bonus_rainbow = Num(1.5); // +75%
+  var bonus_rainbow = Num(20); // +75%
   bonus_rainbow.mulInPlace(getWeatherBoost());
   if(state.upgrades[active_choice0].count == 2 && !opt_perma) bonus_rainbow.mulrInPlace(1 + active_choice0_b_bonus);
   if(opt_perma) bonus_rainbow.mulrInPlace(challenge_stormy_mul);
