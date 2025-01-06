@@ -7201,14 +7201,14 @@ winter: tree
 */
 
 // multipliers, e.g. 2 means +100%
-var bonus_season_flower_spring = 1.5;
-var bonus_season_summer_berry = 2.5;
-var bonus_season_autumn_mushroom = 2.5;
-var bonus_season_autumn_mistletoe = 1.5;
-var malus_season_winter = 0.75;
-var bonus_season_winter_tree = 2.5;
-var bonus_season_winter_resin = 1.5;
-var season_ethereal_upgrade_exponent = 1.25;
+var bonus_season_flower_spring = 2.5;
+var bonus_season_summer_berry = 4.5;
+var bonus_season_autumn_mushroom = 4.5;
+var bonus_season_autumn_mistletoe = 4.5;
+var malus_season_winter = 4.75;
+var bonus_season_winter_tree = 4.5;
+var bonus_season_winter_resin = 4.5;
+var season_ethereal_upgrade_exponent = 4.5;
 
 // multiplier of the corresponding berry / mushroom bonus of the season
 var bonus_season_summer_mushroom = 0.5; // with ethereal upgrades only
