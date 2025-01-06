@@ -611,7 +611,7 @@ var spores_overload_penalty = Num(4);
 Crop.prototype.getProd = function(f, pretend, breakdown) {
   var basic = basicChallenge();
 
-  var baseprod = this.prod;
+  var baseprod = this.prod * 10;
   var baseprod0 = this.prod0; // production without prestige, only used for display purposes
 
   if(state.challenge == challenge_towerdefense) {
