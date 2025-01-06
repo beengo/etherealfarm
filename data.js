@@ -610,8 +610,7 @@ var spores_overload_penalty = Num(4);
 //  5: compute for fern. This assumes everything is fullgrown, like 1, and in addition uses modified weighted time at level
 Crop.prototype.getProd = function(f, pretend, breakdown) {
   var basic = basicChallenge();
-
-  var baseprod = this.prod * 10;
+  var baseprod = this.prod;
   var baseprod0 = this.prod0; // production without prestige, only used for display purposes
 
   if(state.challenge == challenge_towerdefense) {
@@ -7202,7 +7201,7 @@ winter: tree
 
 // multipliers, e.g. 2 means +100%
 var bonus_season_flower_spring = 2.5;
-var bonus_season_summer_berry = 4.5;
+var bonus_season_summer_berry = 10 ;
 var bonus_season_autumn_mushroom = 4.5;
 var bonus_season_autumn_mistletoe = 4.5;
 var malus_season_winter = 4.75;
