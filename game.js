@@ -1177,7 +1177,7 @@ function getPureSeasonAt(time, opt_state) {
 
 function getSeasonAt(time) {
   if(state.challenge == challenge_infernal) return 5;
-
+  return 1; // always summer
   return getPureSeasonAt(time);
 }
 
